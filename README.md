@@ -1,36 +1,39 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# PROGRAMACION DE NUEVAS TECNOLOGIAS 2
 
-## Getting Started
+## Instrucciones de resolución de examen
 
-First, run the development server:
+Es tu primer día en [tecnoshare.com](http://tecnoshare.com) luego de un intenso entrenamiento de 10 semanas por fin tenes la oportunidad de mostrar lo que aprendiste, y tu potencial como desarrollador react.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Luego de abrir el correo encuentras un mail de tu Líder Técnico con tu primera asignación!! 💪
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+> Bienvenid@! estuvimos esperando por horas que llegares, tenemos varias tareas criticas y prioritarias en nuestro backlog. Por favor presta mucha atención a las instrucciones. No dudes en preguntarme cualquier cosa, aunque generalmente estoy muy ocupado resolviendo problemas heredados de las rotaciones de los desarrolladores.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+> En el presente repositorío encontrarás un proyecto de nodejs que ya tiene codigo base del frontend con el que vamos a trabajar. Te aconsejo que sigas los siguientes pasos para armar tu entorno de trabajo.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+> 1. Realizar un Fork del presente repositorio
+> 2. Realizar un clone de repositorio en tu cuenta de github
+> 3. Instalar las dependencias
+> 4. La url del backend es: https://mflixbackend.azurewebsites.net/api/movies ya se encuentra desplegado en un app services en Azure. Por ahora solo existe este endpoint.
+>    El backend se conecta con una base de datos Mongodb en la cual se encuentra la base de datos **sample_mflix** con una collection llamada **movies**, ahí se encuentran aprox. 23.000 películas.
+> 5. Proba el endpoint que ya se encuentra desarrollado: /api/movies debería retornar un json con 23.000 películas. Sin embargo te aconsejo que uses el paginado que tiene para probar (mira la definición del end-point a continuación). Sí por algun motivo no llegase a funcionar, solicita asistencia.
+>    -GET /api/movies?pageSize=[pageSize]&page=[page]
 
-## Learn More
+> ### TUS TAREAS SON LAS SIGUIENTES POR ORDEN DE PRIORIDAD
+>
+> 1. Agregar una cabecera con un logo y un link a la pagina de peliculas, ademas de un pie de pagina
+> 2. Necesitamos hacer cambios menores al listado de películas:
+>    - Agregar el año, debajo del titulo
+>    - Que se pagine de a 20 películas
+> 3. Crear el componente de detalle de la película con su respectivo **poster**, con el **title** debajo y la descripción **fullplot**
+> 4. Agregar me gusta y no me gusta a la pagina del listado de películas
+> 5. Implementar un listado de las 5 mejores peliculas segun el criterio de imdbRating. Y ponerlo en la pagina inicial. (no hay una api especifica para obtener las mejores películas, por lo que debes hacer un filtro en el frontend)
 
-To learn more about Next.js, take a look at the following resources:
+> Desde ya muchas gracias por la colaboración! 😉 como te comente en la entrevista soy muy detallista en la prolijidad del codigo y la performance cada detalle cuenta, sin embargo si no estas seguro, es mejor que lo resuelvas como puedas y me dejes notas en el readme.md del repo, para que yo pueda probar.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Intrucciones para la entrega
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Si ya terminaste o si son las 10:00 asegurate de seguir los siguientes pasos para la entrega:
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Realizar un commit a tu repo con un mensaje con tu nombre completo
+2. Realizar un push a tu repositorio
+3. Realizar un pull request a mi repositorio
