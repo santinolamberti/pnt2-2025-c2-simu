@@ -22,11 +22,11 @@ Luego de abrir el correo encuentras un mail de tu Líder Técnico con tu primera
 >
 > 1. Agregar una cabecera con un logo y un link a la pagina de peliculas, ademas de un pie de pagina
 > 2. Necesitamos hacer cambios menores al listado de películas:
->    - Agregar el año, debajo del titulo
->    - Que se pagine de a 20 películas
+>    - Agregar el **fullplot**, debajo del titulo
+>    - Que se pagine de a 30 películas
 > 3. Crear el componente de detalle de la película con su respectivo **poster**, con el **title** debajo y la descripción **fullplot**
-> 4. Agregar me gusta y no me gusta a la pagina del listado de películas
-> 5. Implementar un listado de las 5 mejores peliculas segun el criterio de imdbRating. Y ponerlo en la pagina inicial. (no hay una api especifica para obtener las mejores películas, por lo que debes hacer un filtro en el frontend)
+> 4. Agregar funcionalidad de favoritos en listado de películas (aunque no se persista)
+> 5. Implementar un listado de las 10 mejores peliculas segun el criterio de imdbRating. Y ponerlo en la pagina inicial. (no hay una api especifica para obtener las mejores películas, por lo que debes hacer un filtro en el frontend)
 
 > Desde ya muchas gracias por la colaboración! 😉 como te comente en la entrevista soy muy detallista en la prolijidad del codigo y la performance cada detalle cuenta, sin embargo si no estas seguro, es mejor que lo resuelvas como puedas y me dejes notas en el readme.md del repo, para que yo pueda probar.
 
