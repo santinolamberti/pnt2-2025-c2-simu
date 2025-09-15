@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import MovieList from './MovieList';
+import './peliculas.css';
 
 export default function Home() {
   const [movies, setMovies] = useState([]);
@@ -25,24 +26,24 @@ export default function Home() {
   }, [page]);
 
   return (
-    <main className="container mx-auto p-4">      
+    <main className="movies-container">      
       {loading ? (
         <p>Cargando películas...</p>
       ) : (
         <>
           <MovieList movies={movies} />
-          <div className="flex justify-center items-center mt-4 space-x-4">
+          <div className="pagination">
             <button 
               onClick={() => setPage(prev => prev > 1 ? prev - 1 : 1)} 
               disabled={page === 1}
-              className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 disabled:opacity-50 disabled:cursor-not-allowed"
+              className="pagination-button"
             >
               ← Anterior
             </button>
-            <span className="text-gray-600 mx-4">Página {page}</span>
+            <span className="pagination-info">Página {page}</span>
             <button 
               onClick={() => setPage(prev => prev + 1)}
-              className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+              className="pagination-button"
             >
               Siguiente →
             </button>

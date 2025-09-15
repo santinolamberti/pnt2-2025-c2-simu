@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './peliculas.css';
 
 export default function MovieCard({ movie }) {
   const [imageError, setImageError] = useState(false);
@@ -8,20 +9,20 @@ export default function MovieCard({ movie }) {
   };
 
   return (
-    <div className="w-[90px] text-center">
+    <div className="movie-card">
       {movie.poster && !imageError ? (
         <img 
           src={movie.poster} 
           alt={movie.title} 
-          className="w-full h-[135px] object-cover rounded-md"
+          className="movie-poster"
           onError={handleImageError}
         />
       ) : (
-        <div className="w-full h-[135px] bg-gray-300 rounded-md flex items-center justify-center">
-          <span className="text-xs text-gray-600 text-center">{movie.title}</span>
+        <div className="movie-fallback">
+          <span className="movie-fallback-text">{movie.title}</span>
         </div>
       )}
-      <p className="text-xs mt-1 truncate">{movie.title}</p>
+      <p className="movie-title">{movie.title}</p>
     </div>
   );
 }
