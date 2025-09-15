@@ -20,9 +20,10 @@ Luego de abrir el correo encuentras un mail de tu Líder Técnico con tu primera
 
 > ### TUS TAREAS SON LAS SIGUIENTES POR ORDEN DE PRIORIDAD
 >
-> 1. Agregar una cabecera con un logo y un link a la pagina de peliculas, ademas de un pie de pagina
+> 1. Agregar en la cabecera un link a la pagina de peliculas con un icono de película, ademas en el pie de la pagina agregar un icono de github con el link del repositorio
 > 2. Necesitamos hacer cambios menores al listado de películas:
 >    - Agregar el **fullplot**, debajo del titulo
+>    - Si no hay **poster** mostrar un icono de película
 >    - Que se pagine de a 30 películas
 > 3. Crear el componente de detalle de la película con su respectivo **poster**, con el **title** debajo y la descripción **fullplot**
 > 4. Agregar funcionalidad de favoritos en listado de películas (aunque no se persista)
