@@ -79,3 +79,11 @@
   color: #4b5563;
   margin: 0 1rem;
 }
+
+.blackIcon {
+  color: black;
+}
+
+button :hover {
+  cursor: pointer;
+}
